@@ -1,0 +1,85 @@
+.banner {
+  position: relative;
+  height: 300px;
+}
+
+.banner_content {
+  color: rgb(218, 97, 97);
+  /* z-index: 100; */
+  position: absolute;
+  /* margin: 0; */
+  top: 50%;
+  text-align: center;
+  width: 100%; /*to make text in center by x axis*/
+}
+
+.banner_content p button {
+  font-size: 0.875rem /* 14px */;
+  line-height: 1.25rem /* 20px */;
+}
+
+.banner button {
+  background-color: white;
+  color: rgb(44, 165, 221);
+  /* border: 1px solid black; */
+  padding-top: 1.7vw;
+  padding-bottom: 1.7vw;
+  padding-left: 4.6vw;
+  padding-right: 4.6vw;
+  border-radius: 60px;
+  margin-top: 3vw;
+  font-weight: 700;
+  transition: 0.2s all;
+  /* shadow */
+  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.5);
+  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color),
+    0 2px 4px -2px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+    var(--tw-ring-shadow, 0 0 rgba(0, 0, 0, 0)), var(--tw-shadow);
+}
+.banner button:hover {
+  --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1),
+    0 8px 10px -6px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color),
+    0 8px 10px -6px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+    var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+.banner button:active {
+  color: chartreuse;
+  transform: scale(0.98);
+  /* Scaling button to 0.98 to its original size */
+  box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+  /* Lowering the shadow */
+}
+
+@media only screen and (min-width: 640px) {
+  .banner_content {
+    font-size: 1.125rem /* 18px */;
+    line-height: 1.75rem /* 28px */;
+  }
+}
+
+@media only screen and (min-width: 640px) {
+  .banner {
+    height: 400px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .banner {
+    height: 450px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .banner {
+    height: 500px;
+  }
+}
+
+@media only screen and (min-width: 1536px) {
+  .banner {
+    height: 550px;
+  }
+}

@@ -3,18 +3,20 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "build-serve": "node --max_old_space_size=8048"
+    "start": "next start"
   },
   "dependencies": {
+    "@heroicons/react": "^1.0.5",
     "next": "latest",
     "npm": "^8.3.0",
+    "postcss-preset-env": "^7.1.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
   },
   "devDependencies": {
-    "autoprefixer": "^10.2.6",
-    "postcss": "^8.3.5",
-    "tailwindcss": "^2.2.4"
+    "@fullhuman/postcss-purgecss": "^4.1.3",
+    "autoprefixer": "^10.4.0",
+    "postcss": "^8.4.5",
+    "tailwindcss": "^3.0.7"
   }
 }
