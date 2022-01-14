@@ -46,7 +46,7 @@
     var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 .banner button:active {
-  color: chartreuse;
+  color: rgb(4, 88, 88);
   transform: scale(0.98);
   /* Scaling button to 0.98 to its original size */
   box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
